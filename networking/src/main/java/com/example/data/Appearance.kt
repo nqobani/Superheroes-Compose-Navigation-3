@@ -1,9 +1,15 @@
 package com.example.data
 
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
 data class Appearance(
-    val eye-color: String,
+    @field:Json(name = "eye-color")
+    val eyeColor: String,
     val gender: String,
-    val hair-color: String,
+    @field:Json(name = "hair-color")
+    val hairColor: String,
     val height: List<String>,
     val race: String,
     val weight: List<String>

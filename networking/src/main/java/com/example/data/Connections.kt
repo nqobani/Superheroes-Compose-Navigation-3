@@ -1,6 +1,11 @@
 package com.example.data
 
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
 data class Connections(
-    val group-affiliation: String,
+    @field:Json(name = "group-affiliation")
+    val groupAffiliation: String,
     val relatives: String
 )
