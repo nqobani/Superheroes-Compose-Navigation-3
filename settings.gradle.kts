@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Superheroes-Compose-Navigation-3"
 include(":app")
- 
+include(":networking")
