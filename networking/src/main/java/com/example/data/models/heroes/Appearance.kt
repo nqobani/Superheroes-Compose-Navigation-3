@@ -1,4 +1,4 @@
-package com.example.data
+package com.example.data.models.heroes
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
