@@ -6,7 +6,7 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class HeroesSearchResponse(
     val response: String,
-    val results: List<Result>,
+    val results: List<Result>?,
     @field:Json(name = "results-for")
-    val resultsFor: String
+    val resultsFor: String?
 )

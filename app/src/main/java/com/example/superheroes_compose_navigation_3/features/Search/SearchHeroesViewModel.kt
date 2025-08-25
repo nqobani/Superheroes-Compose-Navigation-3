@@ -18,8 +18,8 @@ class SearchHeroesViewModel @Inject constructor(
 
     var searchQuery = mutableStateOf("")
 
-    private val _heroes = MutableStateFlow<List<Result>>(emptyList())
-    val heroes: StateFlow<List<Result>> = _heroes
+    private val _heroes = MutableStateFlow<List<Result>?>(emptyList())
+    val heroes: StateFlow<List<Result>?> = _heroes
 
     val isLoading = mutableStateOf(false)
     val error = mutableStateOf<String?>(null)
