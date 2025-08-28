@@ -1,5 +1,6 @@
 package com.example.data.api
 
+import com.example.data.models.heroes.HeroResponse
 import com.example.data.models.heroes.HeroesSearchResponse
 import retrofit2.Response
 import retrofit2.http.GET
@@ -10,4 +11,7 @@ interface HeroesApiService {
 
     @GET("search/{query}")
     suspend fun searchHeroes(@Path("query") name: String): Response<HeroesSearchResponse>
+
+    @GET("{id}")// There is no need for this. If this was a real life project I would just use the data from searchHeroes
+    suspend fun getHero(@Path("id") id: String): Response<HeroResponse>
 }

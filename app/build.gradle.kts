@@ -55,6 +55,7 @@ dependencies {
     //Room
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
+    implementation(libs.androidx.navigation3.ui)
     ksp(libs.room.compiler)
 
     //Hilt

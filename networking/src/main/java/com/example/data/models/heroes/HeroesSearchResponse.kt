@@ -10,3 +10,4 @@ data class HeroesSearchResponse(
     @field:Json(name = "results-for")
     val resultsFor: String?
 )
+
